@@ -1,6 +1,10 @@
 matplotlib
 opencv_contrib_python
-opencv_python_headless
+libgl1
+ffmpeg
+libsm6
+libxext6
+opencv-python-headless
 streamlit
 streamlit_option_menu
 ultralytics
