@@ -1,6 +1,6 @@
 matplotlib
 opencv_contrib_python
-opencv_python
+opencv_python_headless
 streamlit
 streamlit_option_menu
 ultralytics
