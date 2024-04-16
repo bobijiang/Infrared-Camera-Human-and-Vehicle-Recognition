@@ -1,6 +1,5 @@
 matplotlib
 opencv_contrib_python
-libgl1
 ffmpeg
 libsm6
 libxext6
