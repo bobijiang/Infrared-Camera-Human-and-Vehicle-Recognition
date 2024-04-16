@@ -1,8 +1,5 @@
 matplotlib
 opencv_contrib_python
-ffmpeg
-libsm6
-libxext6
 opencv-python-headless
 streamlit
 streamlit_option_menu
