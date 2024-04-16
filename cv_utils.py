@@ -31,8 +31,8 @@ def predict_video(model, file, result_dir):
     frame_height = int(cap.get(4))
 
     # 创建VideoWriter对象
-    fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    out = cv2.VideoWriter(result_dir, fourcc, 25.0, (frame_width, frame_height))
+    fourcc = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
+    out = cv2.VideoWriter(result_dir, fourcc, 30 , (frame_width, frame_height))
     # 设置整个视频处理的进度条
     total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     print(total_frames)
@@ -44,9 +44,6 @@ def predict_video(model, file, result_dir):
         if success:
             results = model.predict(frame, show=False)
             result = results[0]
-            print(f"result:{result}")
-            plt.imshow(X=result.plot()[:, :, ::-1])
-            plt.show()
             annotated_frame = result.plot()
             # cv2.imshow("video",img)
             # 将带注释的帧写入视频文件
